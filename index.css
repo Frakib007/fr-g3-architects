@@ -115,9 +115,10 @@ nav li {
 
 /* main */
 main {
-    padding: 50px 200px;
+    padding: 50px 240px;
 }
-section{
+
+section {
     padding: 0px;
 }
 
@@ -142,9 +143,7 @@ section{
     justify-content: center;
 }
 
-.facts {
-    
-}
+.facts {}
 
 .cards-container {
     display: flex;
@@ -163,8 +162,12 @@ section{
 /* responsive media queries*/
 @media screen and (max-width: 576px) {
     header {
-        padding: 20px;
+        padding: 10px;
 
+    }
+
+    main {
+        padding:20px;
     }
 
     nav,
@@ -178,14 +181,15 @@ section{
 
     }
 
-    .markating-container,
+    /* .markating-container,
     .cards-container {
         padding-left: 20px;
         padding-right: 20px;
+    } */
+    .cards-container {
+        gap: 20px;
     }
-    .cards-container{
-        gap: 100px;
-    }
+
 }
 
 /* medium device
@@ -207,10 +211,9 @@ section{
         grid-template-columns: 1fr;
 
     }
-    .cards-container{
+
+    .cards-container {
         gap: 20px;
     }
-    main {
-        padding: 0px;
-    }
+
 }
